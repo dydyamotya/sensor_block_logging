@@ -50,7 +50,8 @@ class Module:
             return (self.from_registers_to_float(*registers[0:2]),
                     self.from_registers_to_float(*registers[2:4]),
                     registers[4],
-                    self.from_registers_to_int32(*registers[5:7]))
+                    self.from_registers_to_int32(*registers[5:7]),
+                    self.from_registers_to_int32(*registers[8:10]))
 
     @staticmethod
     def from_registers_to_float(*values):
